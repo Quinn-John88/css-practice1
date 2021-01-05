@@ -1,2 +1,2 @@
-# css-practice1.github.io
+# css-practice1
 experimental css 
