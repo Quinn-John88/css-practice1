@@ -1,36 +1,36 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0; /* makes the margin on all 4 sides of the body 0 */
+    padding: 0; /* makes padding on all 4 sides of the body 0 */
+    background: black; /* makes the background black */
+    display:flex; /* defines a flex container, the type of rendering box of the body */
+    justify-content: center; /* justtify-content is basically like text-allign, expect it alligns the flex content in the specific element */ 
+    align-items: center; /* similiar idea, aligns the flex content inside a flexible container */
 }
 /* sets styling for basic body element, prepares body for flex css */
 
 ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
+    list-style-type: none; /* defines the type as none, allowing for the marker to not be visible on the webpage */
+    display: flex;  /* defines a flex container, the type of rendering box of the ul */    
     align-items: center;
     justify-content: center;
 }
 /* sets styling for un-ordered list element, preparing for animations */
 ul li {
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 50%;
-    animation: glow 1.6s ease-in-out infinite;
+    width: 40px; /* sets circle width to 40px */
+    height: 40px; /* sets circle height to 40px */
+    background: white; /* sets circle base color as white */
+    border-radius: 50%; /* rounds out each loading circle */
+    animation: glow 1.6s ease-in-out infinite; /* adds glowing effect to loading circles */
 }
 /* sets loading bar spheres, with glow animation */
-@keyframes glow {
-    0%, 40%, 100% {
-        transform: scale(.2);
+@keyframes glow { /* address and defines the values of the "glow" animation globally */
+    0%, 40%, 100% { /* sets duration for the transform property below */
+        transform: scale(.2); /* sets the actual values of the transform property */
     }
-    20% {
-        transform: scale(1);
+    20% { /* sets a secondary duration */
+        transform: scale(1); /* sets scale of secondary duration */
     }
 }
 /* calls the glow animation tag and set its info */
